@@ -46,7 +46,7 @@ public class MainWindow : Gtk.Dialog {
 
         get_location.begin ();
 
-        weather_info = new GWeather.Info (location, GWeather.ForecastType.LIST);
+        weather_info = new GWeather.Info (location);
 
         var weather_icon = new Gtk.Image.from_icon_name (weather_info.get_symbolic_icon_name (), Gtk.IconSize.DIALOG);
 
